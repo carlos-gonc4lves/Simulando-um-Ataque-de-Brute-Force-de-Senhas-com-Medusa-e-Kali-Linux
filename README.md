@@ -1,24 +1,5 @@
-# Projeto kali, metasploitable2, DVWA exploit com Burpsuite
-![](https://hermes.dio.me/users/company/3a52d6e3-a58c-4755-89c9-fbc093a8868f.png)
-## Links para downloads:
+# Simulando-um-Ataque-de-Brute-Force-de-Senhas-com-Medusa-e-Kali-Linux
 
-[DVWA](https://github.com/digininja/DVWA)  
-[VMWARE-Kali](https://cdimage.kali.org/kali-2025.4/kali-linux-2025.4-vmware-amd64.7z)  
-[Metasploitable-2](https://sourceforge.net/projects/metasploitable/files/latest/download)  
-
-## instalando Docker
-
-```bash
-sudo apt install docker.io -y
-sudo apt install docker-compose -y
-sudo docker compose up -d
-```
-## Visualizando e acessando o docker bash
-
-```bash
-sudo docker ps
-sudo docker exec -it [CONTAINER ID] bash
-```
 
 ### Verificando portas abertas em Metasploitable2
 ![ports](img/metasploitable2.png)
@@ -47,7 +28,7 @@ Com isso, foi identificado dois logins. Acessando via SMB:
 ---
 
 ## Atacando Servidor DVWA com burpsuite:  
-Intercepter o login, realize algum aleatório para iniciar o ataque com Intruder:
+Intercepter o login, realize algum aleatório para iniciar o ataque com Intruder:  
 ![dvwa](img/dvwa_login.png)  
 
 No burpsuite, insira uma lista de password no Payload:
